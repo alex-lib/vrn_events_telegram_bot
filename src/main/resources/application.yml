@@ -1,0 +1,25 @@
+telegram:
+  bot:
+    username: VrnEvents
+    token: 8163538823:AAF9NhV5Ul4lEqNfSLbhJb0EIA-Np6u9q-8
+    notify:
+      delay:
+        value: 10
+        unit: MINUTES
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:3306/EventBot
+    username: root
+    password: "3101"
+    driver-class-name: org.postgresql.Driver
+  jpa:
+
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: UTC
